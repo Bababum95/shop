@@ -1,0 +1,7 @@
+.cart-product {
+    display: flex;
+    gap: 18px;
+    padding: 30px;
+    border-bottom: solid 1px rgba(23, 105, 106, 0.5);
+
+}

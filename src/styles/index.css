@@ -1,0 +1,50 @@
+@import url(../blocks/main-section/main-section.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__buttons/header__buttons.css);
+@import url(../blocks/header/__cart/header__cart.css);
+@import url(../blocks/header/__favourite/header__favourite.css);
+@import url(../blocks/header/__name/header__name.css);
+
+@import url(../blocks/container/container.css);
+@import url(../blocks/product/__image/product__image.css);
+@import url(../blocks/product/__name/product__name.css);
+@import url(../blocks/product/__price/product__price.css);
+@import url(../blocks/product/__card/product__card.css);
+@import url(../blocks/product/__cart/product__cart.css);
+@import url(../blocks/product/__show/product__show.css);
+
+@import url(../blocks/menu/menu.css);
+@import url(../blocks/menu/__list/menu__list.css);
+@import url(../blocks/menu/__item/menu__item.css);
+@import url(../blocks/menu/__title/menu__title.css);
+@import url(../blocks/category/category.css);
+
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__close/popup__close.css);
+@import url(../blocks/popup/__cart/popup__cart.css);
+@import url(../blocks/popup/__description/popup__description.css);
+@import url(../blocks/popup/__image/popup__image.css);
+@import url(../blocks/popup/__price/popup__price.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__favourite/popup__favourite.css);
+@import url(../blocks/popup/__buttons/popup__buttons.css);
+
+@import url(../blocks/popup-cart/popup-cart.css);
+@import url(../blocks/popup-cart/__container/popup-cart__container.css);
+@import url(../blocks/popup-cart/__checkout/popup-cart__checkout.css);
+@import url(../blocks/popup-cart/__close/popup-cart__close.css);
+@import url(../blocks/popup-cart/__footer/popup-cart__footer.css);
+@import url(../blocks/popup-cart/__footer/popup-cart__footer.css);
+@import url(../blocks/popup-cart/__header/popup-cart__header.css);
+@import url(../blocks/popup-cart/__products-list/popup-cart__products-list.css);
+@import url(../blocks/popup-cart/__subtotal/popup-cart__subtotal.css);
+@import url(../blocks/popup-cart/__title/popup-cart__title.css);
+
+@import url(../blocks/cart-product/cart-product.css);
+@import url(../blocks/cart-product/__favourite/cart-product__favourite.css);
+@import url(../blocks/cart-product/__image/cart-product__image.css);
+@import url(../blocks/cart-product/__info/cart-product__info.css);
+@import url(../blocks/cart-product/__name/cart-product__name.css);
+@import url(../blocks/cart-product/__price/cart-product__price.css);

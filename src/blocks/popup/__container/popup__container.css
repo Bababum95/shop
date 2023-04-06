@@ -1,0 +1,16 @@
+.popup__container {
+    background-color: #fff;
+    width: 1000px;
+    height: fit-content;
+    min-height: 300px;
+    max-height: 80%;
+    position: relative;
+    box-shadow: 0 0 15px 0 rgba(23, 105, 106, 0.3);
+    display: flex;
+    gap: 100px;
+    padding: 20px;
+}
+
+.popup__container>div {
+    max-width: 500px;
+}

@@ -1,0 +1,22 @@
+.popup__cart {
+    height: 40px;
+    color: #000;
+    background-color: rgba(23, 105, 106, 0.7);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    gap: 15px;
+}
+.popup__cart img {
+    width: 20px;
+}
+
+.popup__cart:hover {
+    transform: scale(105%);
+}

@@ -1,0 +1,24 @@
+.popup__favourite {
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    gap: 15px;
+    box-sizing: border-box;
+    color: rgba(23, 105, 106, 1);
+    border: solid 2px rgba(23, 105, 106, 1);
+    background-color: #fff;
+}
+
+.popup__favourite img {
+    width: 20px;
+}
+
+.popup__favourite:hover {
+    transform: scale(105%);
+}

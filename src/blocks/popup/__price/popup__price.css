@@ -1,0 +1,8 @@
+.popup__price {
+    font-size: 24px;
+    color: rgba(255, 66, 66, 1);
+}
+
+.popup__price::before {
+    content: '$';
+}

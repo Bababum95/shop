@@ -1,0 +1,18 @@
+.popup-cart__subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.popup-cart__subtotal_text {
+    color: #787A80;
+    margin: 0;
+}
+
+.popup-cart__subtotal_cost {
+    margin: 0;
+}
+
+.popup-cart__subtotal_cost::before {
+    content: '$';
+}

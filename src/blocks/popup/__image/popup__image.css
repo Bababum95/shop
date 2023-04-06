@@ -1,0 +1,7 @@
+.popup__image {
+    width: 400px;
+    height: fit-content;
+    object-fit: contain;
+    max-height: 80vh;
+    align-self: center;
+}

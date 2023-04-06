@@ -1,0 +1,7 @@
+.cart-product__price {
+
+}
+
+.cart-product__price::before {
+    content: '$';
+}

@@ -1,0 +1,15 @@
+.popup-cart {
+    position: fixed;
+    bottom: 0;
+    right: -100vw;
+    top: 0;
+    width: 100vw;
+    transition: right 300ms ease-in-out,
+    background-color 0.3s ease 0.3s;
+
+}
+
+.popup-cart.opened {
+    right: 0;
+    background-color: rgba(0 0 0 /.5);
+}

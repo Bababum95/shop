@@ -1,0 +1,22 @@
+.popup-cart__close {
+    background-color: #5abfb5;
+    width: 25px;
+    height: 3px;
+    border: 0;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.popup-cart__close::after{
+    content: '';
+    background-color: #5abfb5;
+    display: block;
+    width: 3px;
+    height: 25px;
+    transform: translate(5px,-50%);
+}
+
+.popup-cart__close:hover {
+    transform: rotate(45deg) scale(110%);
+}

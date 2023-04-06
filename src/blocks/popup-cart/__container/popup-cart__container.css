@@ -1,0 +1,11 @@
+.popup-cart__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+}

@@ -1,0 +1,14 @@
+.product__cart {
+    width: 25px;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    display: none;
+    opacity: .7;
+    transition: all 300ms ease-in-out;
+}
+
+.product__cart:hover {
+    opacity: 1;
+    transform: scale(120%);
+}

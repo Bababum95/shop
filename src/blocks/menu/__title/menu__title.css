@@ -1,0 +1,29 @@
+.menu__title {
+    font-size: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 0;
+    cursor: pointer;
+}
+
+.menu__title span {
+    background-color: #17696A;
+    width: 16px;
+    height: 2px;
+}
+
+.menu__title span::after{
+    content: '';
+    background-color: #17696A;
+    display: block;
+    width: 2px;
+    height: 16px;
+    transform: translate(7px, -7px);
+    transition: all 400ms ease-in-out;
+}
+
+.menu__title.open span::after {
+    transform: translate(7px, -7px) rotate(90deg);
+}
