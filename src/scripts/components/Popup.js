@@ -13,11 +13,13 @@ export default class PopupProduct {
     }
 
     close() {
+        document.querySelector('.body').classList.remove('lock')
         this._popup.classList.remove('opened');
         document.removeEventListener('keydown', this._handleEscape);
     };
     
     open() {
+        document.querySelector('.body').classList.add('lock')
         this._popup.classList.add('opened');
         document.addEventListener('keydown', this._handleEscape);
     };
