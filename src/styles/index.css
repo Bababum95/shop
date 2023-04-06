@@ -44,6 +44,7 @@
 @import url(../blocks/popup-cart/__title/popup-cart__title.css);
 
 @import url(../blocks/cart-product/cart-product.css);
+@import url(../blocks/cart-product/__delete/cart-product__delete.css);
 @import url(../blocks/cart-product/__favourite/cart-product__favourite.css);
 @import url(../blocks/cart-product/__image/cart-product__image.css);
 @import url(../blocks/cart-product/__info/cart-product__info.css);

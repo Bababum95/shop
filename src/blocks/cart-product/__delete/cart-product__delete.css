@@ -1,0 +1,16 @@
+.cart-product__delete {
+    background-image: url(../../../images/trush.png);
+    width: 15px;
+    height: 15px;
+    border: 0;
+    background-color: #fff;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.cart-product__delete:hover {
+    transform: scale(120%);
+}

@@ -52,12 +52,14 @@
   </template>
   <template class="cart-product__teamplate">
     <li class="cart-product">
+      <button class="cart-product__delete"></button>
       <img class="cart-product__image">
       <div class="cart-product__info">
         <h4 class="cart-product__name"></h4>
         <p class="cart-product__price"></p>
         <button class="cart-product__favourite">
           Move to
+          <img src="<%=require('./images/Vector (Stroke).png')%>">
         </button>
       </div>
     </li>
@@ -86,14 +88,14 @@
   <div class="popup-cart">
     <div class="popup-cart__container">
       <div class="popup-cart__header">
-        <h3 class="popup-cart__title">Your cart (4)</h3>
+        <h3 class="popup-cart__title"></h3>
         <button class="popup-cart__close close"></button>
       </div>
       <ul class="popup-cart__products-list"></ul>
       <div class="popup-cart__footer">
         <div class="popup-cart__subtotal">
           <p class="popup-cart__subtotal_text">Subtotal:</p>
-          <p class="popup-cart__subtotal_cost">100</p>
+          <p class="popup-cart__subtotal_cost"></p>
         </div>
         <button class="popup-cart__checkout">
           <img src="<%=require('./images/walet.png')%>">

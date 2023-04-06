@@ -53,7 +53,7 @@ const rendererCartItems = (item) => {
             titleSelector: '.cart-product__name',
             priceSelector: '.cart-product__price'
         },
-        {  });
+        { deleteCard });
     const cardElement = cardForCart.generateProductCard();
     cartList.addItem(cardElement);
 }
@@ -70,6 +70,19 @@ const openPopup = (data) => {
 const adToCart = (data) => {
     cartListItems.push(data)
     cart.dataset.cart = cartListItems.length
+}
+
+const deleteCard = (data) => {
+    
+}
+
+const countTotal = () => {
+    let total = 0
+    cartListItems.forEach((product) => {
+        total = total + product.price
+    })
+    document.querySelector('.popup-cart__title').textContent = `Your cart (${cartListItems.length})`
+    document.querySelector('.popup-cart__subtotal_cost').textContent = total
 }
 
 const productsList = new Section(rendererProducts, '.container');
@@ -109,8 +122,8 @@ nodeMenuItems.forEach((item) => {
 showAllCategories()
 allCategories.addEventListener('click', showAllCategories)
 cart.addEventListener('click', () => {
-    console.log(cartListItems)
     cartList.cleanContainer()
+    countTotal()
     cartList.renderItems(cartListItems)
     popupCart.open()
 })

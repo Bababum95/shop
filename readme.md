@@ -1,1 +1,1 @@
-# Go to [demo] (https://bababum95.github.io/shop/)
+# Go to [demo](https://bababum95.github.io/shop/)
