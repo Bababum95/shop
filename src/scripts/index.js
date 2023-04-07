@@ -11,6 +11,7 @@ import Popup from './components/Popup.js'
 
 const cartListItems = []
 const allCategories = document.querySelector('.category-all')
+const spinner = document.querySelector('.spinner')
 const nodeMenuItems = document.querySelectorAll('.menu__item')
 const cart = document.querySelector('.header__cart')
 const api = new Api('https://fakestoreapi.com');
@@ -25,7 +26,7 @@ const rendererProducts = (item) => {
             titleSelector: '.product__name',
             priceSelector: '.product__price'
         },
-        { openPopup, adToCart });
+        { openPopup, addToCart });
     const cardElement = card.generateProductCard();
     productsList.addItem(cardElement);
 }
@@ -67,13 +68,17 @@ const openPopup = (data) => {
     popup.open(data)
 }
 
-const adToCart = (data) => {
+const addToCart = (data) => {
     cartListItems.push(data)
     cart.dataset.cart = cartListItems.length
 }
 
 const deleteCard = (data) => {
-    
+    cartListItems.splice(cartListItems.indexOf( data ), 1)
+    cartList.cleanContainer()
+    countTotal()
+    cartList.renderItems(cartListItems)
+    cart.dataset.cart = cartListItems.length === 0 ? '': cartListItems.length
 }
 
 const countTotal = () => {
@@ -85,19 +90,27 @@ const countTotal = () => {
     document.querySelector('.popup-cart__subtotal_cost').textContent = total
 }
 
+function showLoader(show) {
+    show? spinner.classList.remove('hide'): spinner.classList.add('hide')
+}
+
 const productsList = new Section(rendererProducts, '.container');
 const categoriesList = new Section(rendererCategories, '.category__list');
 const cartList = new Section(rendererCartItems, '.popup-cart__products-list');
-const popup = new PopupProduct('.popup');
+const popup = new PopupProduct('.popup', {addToCart});
 const popupCart = new Popup('.popup-cart');
 
 function showAllCategories() {
+    productsList.cleanContainer()
+    showLoader(true)
     api.getProductsList()
         .then(data => {
-            productsList.cleanContainer()
             choiceCategory(allCategories)
             productsList.renderItems(data)
         })
+        .finally(() => {
+            showLoader(false)
+          })
 }
 
 api.getAllCategories()
@@ -106,12 +119,16 @@ api.getAllCategories()
     })
 
 const showCategory = (category) => {
+    productsList.cleanContainer()
+    showLoader(true)
     api.getProductsCategory(category.textContent)
         .then(data => {
-            productsList.cleanContainer()
             choiceCategory(category)
             productsList.renderItems(data)
         })
+        .finally(() => {
+            showLoader(false)
+          })
 }
 
 nodeMenuItems.forEach((item) => {

@@ -1,0 +1,9 @@
+.footer__app-store {
+    cursor: pointer;
+}
+
+@media screen and (max-width:1050px) {
+    .footer__app-store {
+        width: 120px;
+    }
+}

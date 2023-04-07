@@ -1,0 +1,11 @@
+.footer__google-play {
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1050px) {
+    .footer__google-play {
+        margin-left: 20px;
+        width: 120px;
+    }
+}

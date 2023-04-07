@@ -21,4 +21,5 @@
 
 .popup__favourite:hover {
     transform: scale(105%);
+    box-shadow: 0 0 15px 0 rgba(23, 105, 106, 0.3);
 }

@@ -1,0 +1,35 @@
+.footer {
+    background-color: rgba(23, 105, 106, 1);
+    height: 300px;
+    display: flex;
+    gap: 250px;
+    padding: 0 50px;
+}
+
+@media screen and (max-width:1230px) {
+    .footer {
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .footer {
+        height: 190px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .footer {
+        padding-bottom: 50px;
+        height: fit-content;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .footer {
+        padding: 0 20px 50px;
+    }
+    
+}

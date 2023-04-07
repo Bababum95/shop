@@ -1,0 +1,99 @@
+.load-container {
+    border: 0px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    right: -38vw;
+    top: -25px;
+    width: 100%;
+    position: absolute;
+}
+
+.color-spiner {
+    margin: 0;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    border: 20px solid transparent;
+    box-sizing: border-box;
+    background-size: 100% 100%, 50.5% 50.5%, 50.5% 50.5%, 50.5% 50.5%, 50.5% 50.5%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)),
+        linear-gradient(45deg, #AD1C23 0%, #F14A24 50%, #FFD10A 88%),
+        linear-gradient(135deg, #FFD10A 12%, #A7AD28 67%, #508A45 100%),
+        linear-gradient(315deg, #624DA2 0%, #A34053 50%, #AD1C23 100%),
+        linear-gradient(224deg, #508A45 0%, #7AB286 50%, #624DA2 100%);
+    background-position: center center, left top, right top, left bottom, right bottom;
+    background-origin: content-box, border-box, border-box, border-box, border-box;
+    background-clip: content-box, border-box, border-box, border-box, border-box;
+    transform: rotate(130deg);
+    opacity: 1;
+    position: absolute;
+    content: '';
+}
+
+.spinner .loader {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 1;
+    background: linear-gradient(to left, #fff 50%, rgba(255, 255, 255, 0) 75%);
+    position: relative;
+    animation: spinner 1.5s infinite linear;
+    transform: translateZ(0);
+}
+
+.spinner .loader:before {
+    width: 50%;
+    height: 50%;
+    background: #fff;
+    border-radius: 0 100% 0 0;
+    position: absolute;
+    top: -15px;
+    right: 36px;
+    content: '';
+    transform: rotate(-45deg);
+}
+
+.spinner .loader:after {
+    background: #fff;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.spinner.hide {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .load-container {
+        top: auto;
+        right: 0;
+        bottom: -180px;
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

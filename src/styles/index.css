@@ -1,5 +1,7 @@
+@import url(../vendor/normalize.css);
 @import url(../blocks/body/body.css);
 @import url(../blocks/main-section/main-section.css);
+@import url(../blocks/spiner/spiner.css);
 
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__buttons/header__buttons.css);
@@ -50,3 +52,10 @@
 @import url(../blocks/cart-product/__info/cart-product__info.css);
 @import url(../blocks/cart-product/__name/cart-product__name.css);
 @import url(../blocks/cart-product/__price/cart-product__price.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__app-store/footer__app-store.css);
+@import url(../blocks/footer/__apps/footer__apps.css);
+@import url(../blocks/footer/__google-play/footer__google-play.css);
+@import url(../blocks/footer/__image/footer__image.css);
+@import url(../blocks/footer/__title/footer__title.css);

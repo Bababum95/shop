@@ -3,3 +3,9 @@
     height: 320px;
     object-fit: contain;
 }
+
+@media screen and (max-width:950px) {
+    .product__image {
+        height: 230px;
+    }
+}

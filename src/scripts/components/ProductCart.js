@@ -6,9 +6,9 @@ export default class ProductCart extends Product {
         })
     }
 
-    // generateProductCard() {
-    //     this._card = super.generateProductCard()
-    //     this._setEventListeners()
-    //     return this._card;
-    // };
+    generateProductCard() {
+        this._card = super.generateProductCard()
+        this._setEventListeners()
+        return this._card;
+    };
 }

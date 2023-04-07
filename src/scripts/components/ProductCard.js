@@ -6,7 +6,7 @@ export default class ProductCard extends Product {
             this._functions.openPopup(this._data)
         })
         this._card.querySelector('.product__cart').addEventListener('click', () => {
-            this._functions.adToCart(this._data)
+            this._functions.addToCart(this._data)
         })
     }
 

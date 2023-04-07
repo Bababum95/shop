@@ -27,3 +27,15 @@
 .menu__title.open span::after {
     transform: translate(7px, -7px) rotate(90deg);
 }
+
+@media screen and (max-width:1050px) {
+    .menu__title {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .menu__title {
+        width: 100%;
+    }
+}

@@ -1,8 +1,9 @@
 .popup__close {
+    z-index: 2;
     position: absolute;
     top: -20px;
     right: -30px;
-    background-color: rgba(23, 105, 106, 1);
+    background-color: #1ec4c6;
     width: 25px;
     height: 3px;
     border: 0;
@@ -13,7 +14,7 @@
 
 .popup__close::after{
     content: '';
-    background-color: rgba(23, 105, 106, 1);
+    background-color: #1ec4c6;
     display: block;
     width: 3px;
     height: 25px;
